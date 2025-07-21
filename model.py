@@ -5,6 +5,9 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.chrome.options import Options
+import os
+
+
 
 class Bet_Bot:
     def __init__(self, URL):
@@ -113,7 +116,7 @@ class Coefficient:
         print(self.list)
         self.mathican()
         print("------------------------")
-
+        os.system('cls')
 
 
     def insert_number(self , num):
@@ -123,7 +126,7 @@ class Coefficient:
         else:
             temp = 1
         self.unit.append(temp)
-        # print("New number inserted:", num)
+        print("New number inserted:", num)
         if len(self.unit) == 5:
             self.insert_unit(self.unit.copy())
             self.unit.clear()
