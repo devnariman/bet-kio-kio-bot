@@ -111,13 +111,13 @@ class Coefficient:
 
     def insert_unit(self , unit):
         self.list.append(unit)
+        os.system('cls')
         print("------------------------")
         print("New unit inserted:")
         print(self.list)
         self.mathican()
         print("------------------------")
-        os.system('cls')
-
+        
 
     def insert_number(self , num):
         temp = 0
